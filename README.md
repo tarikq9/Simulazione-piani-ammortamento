@@ -1,11 +1,10 @@
 Il seguente Script esegue simulazioni di piani di ammortamenti francesi o italiani, 
 permette di scegliere se effettuare il calcolo in anni o rate e converte automaticamente il tasso annuo nel tasso equivalente sulla base della frequenza dei pagamenti ogni anno (j_pagamenti)
 
- Inoltre Restituisce un grafico che mostra l'incidenza degli interessi sul debito totale e l'andamento della curva degli interessi nel tempo.
+Si può procedere sostituendo direttamente i dati sulle righe 10-11-12 e sulla funzione def ammortamento.
 
- Si può procedere sostituendo direttamente i dati sulle righe 10-11-12 e sulla funzione def ammortamento
+Restituisce inoltre un grafico che mostra l'incidenza degli interessi sul debito totale e l'andamento della curva degli interessi nel tempo.
 
- <img width="1706" height="852" alt="Amortization_schedule ex" src="https://github.com/user-attachments/assets/c7bed1a3-7070-42c3-927d-65a1f88f6758" />
 
 <details>
 <summary>Cliccare qui per visualizzare il piano di ammortamento, output del terminale</summary>
@@ -77,3 +76,5 @@ permette di scegliere se effettuare il calcolo in anni o rate e converte automat
 ```
 
 </details>
+
+ <img width="1706" height="852" alt="Amortization_schedule ex" src="https://github.com/user-attachments/assets/c7bed1a3-7070-42c3-927d-65a1f88f6758" />
