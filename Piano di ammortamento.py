@@ -9,7 +9,7 @@ from tabulate import tabulate
 #selezionare: stile di ammortamento , se calcolare in anni o rate , il numero di anni o rate  
 stile_ammortamento='francese'
 anni_o_rate='anni'
-n=20
+n=30
 
 def ammortamento(debito,j_pagamenti,tasso_annuo,):
     if anni_o_rate=='rate':
@@ -48,10 +48,11 @@ def ammortamento(debito,j_pagamenti,tasso_annuo,):
     ax.plot(tempo,np.cumsum(I),color='firebrick',linestyle='--',label='Interessi=' + str(totale_interessi))
     ax.hlines(y=debito+sum(I).round(2),xmin=0,xmax=rate,color='blue',label='debito finale=' + str(debito_finale))
     ax.set_facecolor('floralwhite')
+    ax.set_xlabel('N° Rate',fontweight='bold',fontsize=14)
     ax.grid(linestyle='--',linewidth=0.5)
     ax.plot([], [], ' ', label='incidenza interessi/debito =' + str(incidenza_int)+'%')
     ax.legend(ncol=2, loc='center', bbox_to_anchor=(0.55,1.085))
     plt.show()            
-ammortamento(10000,2,0.07)                  
+ammortamento(10000,1,0.03)                  
 
 
